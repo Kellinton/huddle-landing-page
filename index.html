@@ -1,26 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/img/favicon-32x32.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                violet: 'hsl(257, 40%, 49%)',
-                magenta: 'hsl(300, 69%, 71%)'
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huddle Landing Page</title>
+  <link rel="stylesheet" href="./assets/img/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            violet: 'hsl(257, 40%, 49%)',
+            magenta: 'hsl(300, 69%, 71%)'
           }
         }
-      </script>
+      }
+    }
+  </script>
 </head>
-<body class="bg-violet">
-    <div class="bg-black">teste</div>
-    
+
+<body class="bg-violet h-full w-full">
+  <div
+    class="bg-[url('assets/img/bg-desktop.svg')] grid grid-cols-[1fr_1fr] grid-rows-[150px_1fr_150px] bg-cover bg-no-repeat min-h-screen max-h-full max-w-full">
+    <header class="flex justify-center items-center col-span-full row-start-1 row-end-2">
+      <div class="w-5/6">
+        <img src="./assets/img/logo.svg" alt="">
+      </div>
+    </header>
+    <main class="grid grid-cols-2 col-span-full row-start-2 row-end-3">
+      <section class="flex justify-center items-center">
+        <img src="./assets/img/illustration-mockups.svg" alt="">
+      </section>
+      <section class="text-white flex justify-center items-center">
+        <article class="h-96 flex flex-col">
+          <h2 class="text-5xl font-semibold mb-10">Build The community</br>
+            Your Fans Will Love
+          </h2>
+          <p class="text-2xl font-thin mb-4 grow">
+            Huddle re-imagens the way we build communities. You have</br>
+            a voice, but so does your audience. Create connections with</br>
+            your users as you engage in genuine discussion.
+          </p>
+          <div
+            class="bg-white w-64 h-16 rounded-full flex items-center justify-center cursor-pointer hover:bg-magenta group shadow-xl transition ease-in-out delay-300">
+            <a class="text-magenta font-medium  group-hover:text-white transition ease-in-out delay-300 "
+              href="#">Register</a>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="flex justify-center col-span-full row-start-3 row-end-4">
+      <div class="h-full w-5/6 flex justify-end items-center">
+        <i class="text-5xl cursor-pointer fa-brands fa-facebook" style="color: #ffffff;"></i>
+        <i class="text-5xl ml-6 cursor-pointer fa-brands fa-twitter" style="color: #ffffff;"></i>
+        <i class="text-5xl ml-6 cursor-pointer fa-brands fa-instagram" style="color: #ffffff;"></i>
+      </div>
+    </footer>
+
+
+  </div>
 </body>
+
 </html>
